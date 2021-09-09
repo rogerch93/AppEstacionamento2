@@ -12,3 +12,17 @@ C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento.NET3\AppEstacion
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.dll
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.pdb
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.genruntimeconfig.cache
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.csproj.AssemblyReference.cache
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.AssemblyInfoInputs.cache
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.AssemblyInfo.cs
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.csproj.CoreCompileInputs.cache
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.dll
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.pdb
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\bin\Debug\netcoreapp3.1\AppEstacionamento.NET3.exe
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\bin\Debug\netcoreapp3.1\AppEstacionamento.NET3.deps.json
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\bin\Debug\netcoreapp3.1\AppEstacionamento.NET3.runtimeconfig.json
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\bin\Debug\netcoreapp3.1\AppEstacionamento.NET3.runtimeconfig.dev.json
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\bin\Debug\netcoreapp3.1\AppEstacionamento.NET3.dll
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\bin\Debug\netcoreapp3.1\AppEstacionamento.NET3.pdb
+C:\Users\roger.DESKTOP-FT9COCG\Desktop\DIO\C#\AppEstacionamento2\AppEstacionamento.NET3\AppEstacionamento.NET3\obj\Debug\netcoreapp3.1\AppEstacionamento.NET3.genruntimeconfig.cache

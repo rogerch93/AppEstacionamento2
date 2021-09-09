@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj": {}
+    "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento2\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj": {
+    "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento2\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj",
+        "projectUniqueName": "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento2\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj",
         "projectName": "AppEstacionamento.NET3",
-        "projectPath": "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj",
+        "projectPath": "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento2\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\AppEstacionamento.NET3.csproj",
         "packagesPath": "C:\\Users\\roger.DESKTOP-FT9COCG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\obj\\",
+        "outputPath": "C:\\Users\\roger.DESKTOP-FT9COCG\\Desktop\\DIO\\C#\\AppEstacionamento2\\AppEstacionamento.NET3\\AppEstacionamento.NET3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

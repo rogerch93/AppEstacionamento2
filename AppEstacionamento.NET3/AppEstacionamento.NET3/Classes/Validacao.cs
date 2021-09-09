@@ -16,16 +16,6 @@ namespace AppEstacionamento.NET3
             string cpf;
             int soma;
             int resto;
-
-            string invalido1 = "99999999999";
-            string invalido2 = "88888888888";
-            string invalido3 = "77777777777";
-            string invalido4 = "66666666666";
-            string invalido5 = "55555555555";
-            string invalido6 = "44444444444";
-            string invalido7 = "33333333333";
-            string invalido8 = "22222222222";
-            string invalido9 = "11111111111";
  
             cpf = v;
             cpf = cpf.Trim();
@@ -62,43 +52,6 @@ namespace AppEstacionamento.NET3
                 resto = 11 - resto;
             digito = digito + resto.ToString();
             
-            if (digito == invalido1)
-            {
-                Console.WriteLine("Cpf Invalido!");
-
-                if(digito == invalido2)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-                if(digito == invalido3)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-                if (digito == invalido4)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-                if (digito == invalido5)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-                if (digito == invalido6)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-                if (digito == invalido7)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-                if (digito == invalido8)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-                if (digito == invalido9)
-                {
-                    Console.WriteLine("Cpf Invalido!");
-                }
-            }
             return cpf.EndsWith(digito);
         }
     }

@@ -15,13 +15,13 @@ namespace AppEstacionamento.NET3
         private string Placa { get; set; }
         private string NomePessoa { get; set; }
         private string Cpf { get; set; }
-        private int NumVaga { get; set; }
+        private string NumVaga { get; set; }
         private string HoraEntrada { get; set; }
         private string HoraSaida { get; set; }
         private string Total { get; set; }
         private bool Excluido { get; set; }
 
-        public CarroPessoa(int id, Genero genero, string modelo, string marca, string placa, string nomePessoa, string cpf, int numVaga,
+        public CarroPessoa(int id, Genero genero, string modelo, string marca, string placa, string nomePessoa, string cpf, string numVaga,
         string horaEntrada, string horaSaida, string total)
         {
             this.Id = id;
@@ -38,20 +38,6 @@ namespace AppEstacionamento.NET3
             this.Excluido = false;
         }
 
-        public CarroPessoa(int id, Genero genero, string marca, string placa, string nomePessoa, string cpf, int numVaga, string horEntrada, string horaSaida, string total)
-        {
-            Id = id;
-            Genero = genero;
-            Marca = marca;
-            Placa = placa;
-            NomePessoa = nomePessoa;
-            Cpf = cpf;
-            NumVaga = numVaga;
-            HoraEntrada = horEntrada;
-            HoraSaida = horaSaida;
-            Total = total;
-        }
-
         public CarroPessoa(int id, Genero genero, string marca, string placa, string nomePessoa, string cpf, string numVaga, string horaEntrada)
         {
             Id = id;
@@ -60,7 +46,14 @@ namespace AppEstacionamento.NET3
             Placa = placa;
             NomePessoa = nomePessoa;
             Cpf = cpf;
+            NumVaga = numVaga;
             HoraEntrada = horaEntrada;
+        }
+
+        public CarroPessoa(string horaSaida, string total) 
+        {
+            HoraSaida = horaSaida;
+            Total = total;
         }
 
         public override string ToString()
@@ -114,9 +107,24 @@ namespace AppEstacionamento.NET3
             return this.Placa;
         }
 
-        public int retornaVaga()
+        public string retornaVaga()
         {
             return this.NumVaga;
+        }
+
+        public Genero retornaGenero()
+        {
+            return this.Genero;
+        }
+
+        public string retornaHoraSaida()
+        {
+            return this.HoraSaida;
+        }
+
+        public string retornaTotal()
+        {
+            return this.Total;
         }
 
         public void Exclui()

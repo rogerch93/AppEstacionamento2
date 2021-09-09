@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace AppEstacionamento.NET3
+namespace CRUD.Series.Interfaces
 {
-    interface ICarros<T>
+    public interface ICarros<T>
     {
         List<T> Lista();
         T RetornaPorId(int id);
-        void Insere(T enteidade);
+        void Insere(T entidade);
         void Exclui(int id);
         void Atualiza(int id, T entidade);
-        void ProximoId();
+        int ProximoId();
+
     }
 }

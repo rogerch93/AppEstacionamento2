@@ -26,6 +26,9 @@ namespace AppEstacionamento.NET3
                     case "3":
                         AtualizarCarros();
                         break;
+                    case "4":
+                        ExcluirCliente();
+                        break;
                     case "C":
                         Console.Clear();
                         break;
@@ -36,6 +39,13 @@ namespace AppEstacionamento.NET3
 
                 opcaoUsuario = obterLista();
             }
+        }
+
+        private static void ExcluirCliente()
+        {
+            Console.WriteLine("Digite o id da do cliente: ");
+            int idDoCliente = int.Parse(Console.ReadLine());
+            repositorio.Exclui(idDoCliente);
         }
 
         private static void AtualizarCarros()
@@ -78,7 +88,8 @@ namespace AppEstacionamento.NET3
                                                           nomePessoa: entradaNome,
                                                           cpf: entradaCpf,
                                                           numVaga: entradaVaga,
-                                                          horaEntrada: entradaHora);
+                                                          horaEntrada: entradaHora
+                                                          );
             repositorio.Atualiza(indeceCarro,atualizaCarro);
         }
 
@@ -149,15 +160,61 @@ namespace AppEstacionamento.NET3
             foreach (var carro in lista)
             {
                 var excluido = carro.retornaExcluido();
+                if (!string.IsNullOrEmpty(carro.retornaNomePessoa()))
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("#ID: " + carro.retornaId());
+                    Console.WriteLine("Estilo de Carro: " + carro.retornaGenero());
+                    Console.WriteLine("Placa: " + carro.retornaPlaca());
+                    Console.WriteLine("Numero da Vaga: " + carro.retornaVaga());
+                    Console.WriteLine("Nome do Cliente: " + Convert.ToString(carro.retornaNomePessoa()));
+                    Console.WriteLine("CPF: " + carro.retornaCPF());
+                    Console.WriteLine("Hora de Entrada: " + carro.retornaHoraEntrada());
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+                Console.WriteLine("Deseja Emitir valor para algum cliente ?: Y/N");
+                if (Console.ReadKey(true).Key != ConsoleKey.Y)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("  " + "Horario de entrada:");
+                    Console.WriteLine(carro.retornaHoraEntrada());
+                    Console.WriteLine();
 
-                Console.WriteLine();
-                Console.WriteLine("#ID: {0}: - {1}");
-                Console.WriteLine("Numero da Vaga: " + carro.retornaVaga());
-                Console.WriteLine("Nome do Cliente: " + carro.retornaNomePessoa());
-                Console.WriteLine("Placa: " + carro.retornaPlaca());
-                Console.WriteLine("Hora de Entrada: " + carro.retornaHoraEntrada());
-                Console.WriteLine();
+                    Console.WriteLine(" " + "Insira o horario de saida:");
+                    string entradaHoraSaida = Console.ReadLine();
+                    
+                    Console.WriteLine();
+
+                    TimeSpan parsed1 = TimeSpan.Parse(carro.retornaHoraEntrada());
+                    TimeSpan parsed2 = TimeSpan.Parse(entradaHoraSaida);
+
+                    var soma = parsed1 - parsed2;
+
+                    Console.WriteLine("  " + "Horas consumidas no estacionamento:");
+                    Console.WriteLine(soma);
+
+                    Console.WriteLine();
+
+                    Console.WriteLine("  " + "Informe as horas que o veiculo ficou no estacionamento");
+                    string entradaTotal = Console.ReadLine();
+                    CarroPessoa novoCarroPessoa = new CarroPessoa(horaSaida: entradaHoraSaida,
+                                                                  total: entradaTotal);
+                    repositorio.Insere(novoCarroPessoa);
+
+                    var valor = Convert.ToDouble(entradaTotal) * 5;
+
+                    Console.WriteLine();
+
+                    Console.WriteLine("  " + "Valor a ser pago: R$" + valor + ",00");
+                    break;
+                }
             } 
+
         }
         
         private static string obterLista()
@@ -171,6 +228,10 @@ namespace AppEstacionamento.NET3
             Console.WriteLine("   " + "1-Inserir veiculo em uma vaga do estacionamento:");
             Console.WriteLine("   " + "================================================");
             Console.WriteLine("   " + "2-Listar todos os veiculos cadastrados:");
+            Console.WriteLine("   " + "================================================");
+            Console.WriteLine("   " + "3-Atualizar os veiculos cadastrados:");
+            Console.WriteLine("   " + "================================================");
+            Console.WriteLine("   " + "4-Excluir veiculos cadastrados:");
             Console.WriteLine("   " + "================================================");
             Console.WriteLine("   " + "X-Sair da Aplicação");
             Console.WriteLine();

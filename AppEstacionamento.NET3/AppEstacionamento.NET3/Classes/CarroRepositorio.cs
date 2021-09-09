@@ -1,15 +1,12 @@
-﻿using AppEstacionamento.NET3;
-using System;
+﻿using CRUD.Series.Interfaces;
 using System.Collections.Generic;
-using System.Text;
+
 
 namespace AppEstacionamento.NET3
 {
     public class CarroRepositorio : ICarros<CarroPessoa>
     {
-
         private List<CarroPessoa> listaCarroPessoa = new List<CarroPessoa>();
-
         public void Atualiza(int id, CarroPessoa objeto)
         {
             listaCarroPessoa[id] = objeto;
@@ -39,10 +36,5 @@ namespace AppEstacionamento.NET3
         {
             return listaCarroPessoa[id];
         }
-
-        void ICarros<CarroPessoa>.ProximoId()
-        {
-            throw new NotImplementedException();
-        }
-    }   
+    }
 }
