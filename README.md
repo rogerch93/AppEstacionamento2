@@ -5,4 +5,4 @@
 > - Atualiza a lista de clientes cadastrado
 > - Exclui clientes
 > - Entre outras funcionalidades que serão implementadas
-> - 🛠EM CONSTRUÇÂO🛠
+> - 🛠EM CONSTRUÇÂO🛠.
