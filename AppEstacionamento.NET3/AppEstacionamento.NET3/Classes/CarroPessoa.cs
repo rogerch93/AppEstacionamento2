@@ -9,6 +9,8 @@ namespace AppEstacionamento.NET3
 {
     public class CarroPessoa : EntidadeBase
     {
+        private object horaEntrada;
+
         private Genero Genero { get; set; }
         private string Modelo { get; set; }
         private string Marca { get; set; }
@@ -19,7 +21,7 @@ namespace AppEstacionamento.NET3
         private string HoraEntrada { get; set; }
         private string HoraSaida { get; set; }
         private string Total { get; set; }
-        private bool Excluido { get; set; }
+        private bool Pago { get; set; }
 
         public CarroPessoa(int id, Genero genero, string modelo, string marca, string placa, string nomePessoa, string cpf, string numVaga,
         string horaEntrada, string horaSaida, string total)
@@ -35,7 +37,7 @@ namespace AppEstacionamento.NET3
             this.HoraEntrada = horaEntrada;
             this.HoraSaida = horaSaida;
             this.Total = total;
-            this.Excluido = false;
+            this.Pago = false;
         }
 
         public CarroPessoa(int id, Genero genero, string marca, string placa, string nomePessoa, string cpf, string numVaga, string horaEntrada)
@@ -50,10 +52,25 @@ namespace AppEstacionamento.NET3
             HoraEntrada = horaEntrada;
         }
 
-        public CarroPessoa(string horaSaida, string total) 
+
+        public CarroPessoa(string horaSaida, object horaEntrada, string total)
         {
             HoraSaida = horaSaida;
+            this.horaEntrada = horaEntrada;
             Total = total;
+        }
+
+        public CarroPessoa(int id, Genero genero, string modelo, string marca, string placa, string nomePessoa, string cpf, string numVaga, string horaEntrada)
+        {
+            Id = id;
+            Genero = genero;
+            Modelo = modelo;
+            Marca = marca;
+            Placa = placa;
+            NomePessoa = nomePessoa;
+            Cpf = cpf;
+            NumVaga = numVaga;
+            this.horaEntrada = horaEntrada;
         }
 
         public override string ToString()
@@ -84,7 +101,7 @@ namespace AppEstacionamento.NET3
 
         public bool retornaExcluido()
         {
-            return this.Excluido;
+            return this.Pago;
         }
 
         public string retornaModelo()
@@ -129,7 +146,7 @@ namespace AppEstacionamento.NET3
 
         public void Exclui()
         {
-            this.Excluido = true;
+            this.Pago = true;
         }
     }
 }
