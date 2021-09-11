@@ -1,16 +1,9 @@
-﻿using AppEstacionamento.NET3;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace AppEstacionamento.NET3
 {
     public class CarroPessoa : EntidadeBase
     {
-        private object horaEntrada;
-
         private Genero Genero { get; set; }
         private string Modelo { get; set; }
         private string Marca { get; set; }
@@ -53,10 +46,10 @@ namespace AppEstacionamento.NET3
         }
 
 
-        public CarroPessoa(string horaSaida, object horaEntrada, string total)
+        public CarroPessoa(string horaSaida, string horaEntrada, string total)
         {
             HoraSaida = horaSaida;
-            this.horaEntrada = horaEntrada;
+            HoraEntrada = horaEntrada;
             Total = total;
         }
 
@@ -70,83 +63,81 @@ namespace AppEstacionamento.NET3
             NomePessoa = nomePessoa;
             Cpf = cpf;
             NumVaga = numVaga;
-            this.horaEntrada = horaEntrada;
+            HoraEntrada = horaEntrada;
         }
 
         public override string ToString()
         {
             string retorno = "";
-            retorno += "Gênero: " + this.Genero + Environment.NewLine;
-            retorno += "Modelo: " + this.Modelo + Environment.NewLine;
-            retorno += "Marca: " + this.Marca + Environment.NewLine;
-            retorno += "Placa: " + this.Placa + Environment.NewLine;
-            retorno += "Nome do Cliente: " + this.NomePessoa + Environment.NewLine;
-            retorno += "CPF: " + this.Cpf + Environment.NewLine;
-            retorno += "Numero da Vaga: " + this.NumVaga + Environment.NewLine;
-            retorno += "Hora de Entrada: " + this.HoraEntrada + Environment.NewLine;
-            retorno += "Hora de Saida: " + this.HoraSaida + Environment.NewLine;
-            retorno += "Total: " + this.Total + Environment.NewLine;
+            retorno += "Gênero: " + Genero + Environment.NewLine;
+            retorno += "Modelo: " + Modelo + Environment.NewLine;
+            retorno += "Marca: " + Marca + Environment.NewLine;
+            retorno += "Placa: " + Placa + Environment.NewLine;
+            retorno += "Nome do Cliente: " + NomePessoa + Environment.NewLine;
+            retorno += "CPF: " + Cpf + Environment.NewLine;
+            retorno += "Numero da Vaga: " + NumVaga + Environment.NewLine;
+            retorno += "Pago: " + Pago;
             return retorno;
         }
 
-        public string retornaCPF()
+        public string RetornaCPF()
         {
-            return this.Cpf;
+            return Cpf;
         }
 
-        public int retornaId()
+        public int RetornaId()
         {
-            return this.Id;
+            return Id;
         }
 
-        public bool retornaExcluido()
+        public bool RetornaExcluido()
         {
-            return this.Pago;
+            return Pago;
         }
 
-        public string retornaModelo()
+        public string RetornaModelo()
         {
-            return this.Modelo;
+            return Modelo;
         }
 
-        public string retornaNomePessoa()
+        public string RetornaNomePessoa()
         {
-            return this.NomePessoa;
+            return NomePessoa;
         }
 
-        public string retornaHoraEntrada()
+        public string RetornaHoraEntrada()
         {
-            return this.HoraEntrada;
+            return HoraEntrada;
         }
 
-        public string retornaPlaca()
+        public string RetornaPlaca()
         {
-            return this.Placa;
+            return Placa;
         }
 
-        public string retornaVaga()
+        public string RetornaVaga()
         {
-            return this.NumVaga;
+            return NumVaga;
         }
 
-        public Genero retornaGenero()
+        public Genero RetornaGenero()
         {
-            return this.Genero;
+            return Genero;
         }
 
-        public string retornaHoraSaida()
+        public string RetornaHoraSaida()
         {
-            return this.HoraSaida;
+            return HoraSaida;
         }
 
-        public string retornaTotal()
+        public string RetornaTotal()
         {
-            return this.Total;
+            return Total;
         }
 
         public void Exclui()
         {
-            this.Pago = true;
+            Pago = true;
         }
     }
 }
