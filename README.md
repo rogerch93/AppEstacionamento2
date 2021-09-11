@@ -4,5 +4,6 @@
 > - Salva clientes em uma lista na memória (o anterior era salvo em uma array limitada a 5 unidades).
 > - Atualiza a lista de clientes cadastrado
 > - Exclui clientes
-> - Entre outras funcionalidades que serão implementadas
-> - 🛠EM CONSTRUÇÂO🛠.
+> - Informa valor devido aos clientes
+> - Mostra situação de clientes se esta pago ou não.
+
