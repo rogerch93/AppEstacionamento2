@@ -251,6 +251,8 @@ namespace AppEstacionamento.NET3
             Console.WriteLine("   " + "================================================");
             Console.WriteLine("   " + "5-Conferir situação de clientes no estacionamento:");
             Console.WriteLine("   " + "================================================");
+            Console.WriteLine("   " + "C-Limpar a Tela");
+            Console.WriteLine("   " + "================================================");
             Console.WriteLine("   " + "X-Sair da Aplicação");
             Console.WriteLine();
 
